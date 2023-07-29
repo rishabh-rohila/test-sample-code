@@ -1,0 +1,68 @@
+outcomes -
+we will create a project - Text-Utils
+
+In this app we made some changes -
+ Changed brand name - Text-Utility
+ Added a div and add article tag into div -
+ Can we use <p> instead of <article> ?  yes but it will give line space so we use article instead of paragraph.
+ if u want different different line then use article otherwise - for single line use <p>
+ Changing button style into outline.
+ adding some extra features like -
+ 
+ <p>
+ Total words - <strong>{text.split(' ').filter(word => word !== '').length}</strong>  => count each words without space 
+ Total character - <strong>{text.length}</strong>                                     => count text character
+ Total time to read - <strong>{0.008 * text.split(' ').length}</strong>               => total time taken in read
+ </p>
+
+ adding lowercase, Sentence case, and other buttons like this. Also add handle function for each button like 
+ text.touppercase => for UPPERCASE 
+ text.tolowercase  => for lowercase
+
+ let sentenceCase = text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
+  let newCase = sentenceCase.replace(/([.!?]+\s*)(\w)/g, (match, punctuation, nextChar) => {
+        return punctuation + nextChar.toUpperCase();
+      });
+      
+
+const handleClearText = () => {
+        setText('')           => for clear text box
+}
+
+const handleCopyText = () => {
+      navigator.clipboard.writeText(text)
+      const message = "Your Message has Copied";        => simple copy text feature but remember if u use alert it will show pop  and during this pop up if you change in another tab and again return to pervious tab then it will shoe an error like "document is not focused "due to un-handle alert pop-up error or when you click on ok then pop will disappear.
+      alert(message);
+        
+    }
+
+now we will work on bold text, italic text, binary text, morse code etc. extra functions.
+.
+.
+.
+.
+.
+all done till now we have added these functionality -
+erase
+copy
+UPPERCASE
+lowercase
+sentenceCase
+speak now
+binary code
+morse code
+remove duplicate lines
+text reverse
+remove extra spaces
+calculate Numbers ***  ( it is awesome for me )
+extract values
+.
+.
+.
+.
+.
+.
+.
+.
+.
+we will add more functions, just wait for a while..
