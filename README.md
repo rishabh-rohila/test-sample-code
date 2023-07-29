@@ -1,10 +1,8 @@
 //  Calculate the extracted value
   const handleCalculateClick = () => {
-    const extractedValues = extractValues(text);
     const calculationResult = evaluateExpression(extractedValues);
-    const extractedValuesText = `Extracted Values: ${extractedValues.join(' ')}`;
     const calculationResultText = `Result: ${calculationResult}`;
-    setText(`${extractedValuesText}\n${calculationResultText}`);
+    setText(`${calculationResultText}`);
   };
 
   // evaluating the give expressing and providing correct result
